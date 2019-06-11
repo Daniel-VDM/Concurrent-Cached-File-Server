@@ -12,7 +12,7 @@ This was the final project done for the Machine Structures course taken at UC Be
 
 4) Run the server by running: `go run server.go`
 
->Here are the run options:
+Here are the run options:
 ```
   -c int
         Number of bytes to allow in the cache. (default 1000000)
@@ -25,7 +25,7 @@ This was the final project done for the Machine Structures course taken at UC Be
         Default timeout (in seconds) to wait before returning an error. (default 2)
 ```
 
-> Note that file requests for `/cache/` will return cache information and requests for `/cache/clear/` will clear the cache
+> Note that file requests for `/cache/` will return cache information and file requests for `/cache/clear/` will clear the cache.
 
 ## Implementation Details
 First of all, it can handle numerous concurrent requests. 
