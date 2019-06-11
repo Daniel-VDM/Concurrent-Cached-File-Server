@@ -14,7 +14,8 @@ This is a file server that features a cache which can efficiently handle thousan
 
 4) Run the server by running: `go run server.go`
 
-> Here are the options:```
+>Here are the run options:
+```
   -c int
         Number of bytes to allow in the cache. (default 1000000)
   -d string
@@ -23,7 +24,8 @@ This is a file server that features a cache which can efficiently handle thousan
   -p int
         Port to listen for HTTP requests (default port 8080). (default 8080)
   -t int
-        Default timeout (in seconds) to wait before returning an error. (default 2)```
+        Default timeout (in seconds) to wait before returning an error. (default 2)
+```
 
 > Note that file requests for `/cache/` will return cache information and requests for `/cache/clear/` will clear the cache
 
