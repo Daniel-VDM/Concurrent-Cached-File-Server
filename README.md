@@ -1,7 +1,5 @@
 # Concurrent Cached File Server
-This was the final project done for the Machine Structures course taken at UC Berkeley.
-
-**It is a file server that features a cache which can efficiently handle thousands of concurrent file requests.**
+This was the final project done for the Machine Structures course taken at UC Berkeley. **It is a file server that features a cache which can efficiently handle thousands of concurrent file requests.**
 
 ## Setup and Execution
 
