@@ -1,0 +1,5 @@
+default ../cmp/jamcentral/jamcentral.html
+rect ../cmp/jamcentral/prodnotes.html 33,92 178,136
+rect ../cmp/jamcentral/filmmakers.html 104,138 229,181
+rect ../cmp/jamcentral/photos.html 244,111 416,152
+rect ../cmp/jamcentral/trailer.html 230,155 334,197

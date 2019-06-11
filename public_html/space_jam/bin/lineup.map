@@ -1,0 +1,5 @@
+default ../cmp/lineup/lineup.html
+rect ../cmp/lineup/castbios.html 203,83 233,246
+rect ../cmp/lineup/playerbios.html 236,80 277,255
+rect ../cmp/lineup/looneybios.html 281,75 330,269
+rect ../cmp/lineup/badguys.html 332,62 390,281

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CS 61C is the best</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <marquee class="banner" scrollamount="30">
+        <span class="rainbow">CS 61C IS THE BEST</span>
+    </marquee>
+    <h1 class="site-title flashing">Comp Arch Rules!</h1>
+    <nav class="site-navigation">
+        <a href="">HOME</a>
+        <a href="my_documents/index.html">SEE MY FILES</a>
+        <a href="space_jam/index.html">COME ON AND SLAM</a>
+        <a href="resume/index.html">C00L WEBSITE</a>
+    </nav>
+    <div id="rotor-container" class="site-content var-pink">
+        <div id="rotor-root">
+            <div class="rotating"><p class="site-icon pulsing rotors">Machine Structures</p></div>
+        </div>
+        <p><img src="img/new.gif" /> CLICK ME!</p>
+        <marquee scrollamount="32">
+            <p><img src="img/new.gif" /> HOLD SHIFT AND CLICK ME!</p>
+        </marquee>
+        <marquee scrollamount="24" direction="right">
+            <p><img src="img/new.gif" /> HOLD ALT AND CLICK ME!</p>
+        </marquee>
+    </div>
+    <footer class="site-content var-orange">
+        <p>Here is a list of your cache stats:</p>
+        <p id="cacheStats"></p>
+        <p><button id="refreshcachestats" onclick="refreshCache();">Refresh</button><button onclick="clearCache();">Clear Cache</button></p>
+        <br>
+        <p>Shamelessly stolen from CS162. Its a great class to take if you are interested in operating systems!</p>
+    </footer>
+<script>
+    var clearCount = 0;
+    setInterval(function(){
+        if (clearCount == 0) {
+            var cs = document.getElementById("refreshcachestats");
+            cs.click();
+        }
+    }, 1000);
+    function loadXMLDoc(url) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+                document.getElementById("cacheStats").innerHTML =
+                        this.responseText.replace(/\n/gi, "<br>");
+            }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    }
+    function clearCache (){
+        clearCount++;
+        loadXMLDoc("cache/clear");
+        setTimeout(function(){
+            loadXMLDoc("cache");
+            clearCount--;
+        }, 1000);
+    }
+    function refreshCache() {
+        loadXMLDoc("cache");
+    }
+    var imgs = [
+        "my_documents/andy.jpg",
+        "my_documents/bob.png",
+        "my_documents/elizabeth.jpg",
+        "my_documents/kunal.jpg",
+        "my_documents/nickweaver.jpg",
+        "my_documents/sean.jpg",
+        "my_documents/sukhpreet.jpeg",
+        "my_documents/andyyan.jpg",
+        "my_documents/damon.jpg",
+        "my_documents/hersh.jpg",
+        "my_documents/max.jpg",
+        "my_documents/nikhil.jpg",
+        "my_documents/seandooher.jpg",
+        "my_documents/wenyuan.jpg",
+        "my_documents/alex.jpg",
+        "my_documents/anusha.jpeg",
+        "my_documents/daniel.jpg",
+        "my_documents/ian.jpg",
+        "my_documents/morgan.jpg",
+        "my_documents/ram.jpg",
+        "my_documents/sruthi.jpg",
+        "my_documents/yuxin.png",
+        "my_documents/allan.jpg",
+        "my_documents/avi.jpg",
+        "my_documents/danielli.jpg",
+        "my_documents/morgan.png",
+        "my_documents/sarah.jpg",
+        "my_documents/stephan.jpg",
+        "my_documents/zac.jpg",
+        "my_documents/alvin.jpg",
+        "my_documents/ayush.jpg",
+        "my_documents/derek.jpg",
+        "my_documents/katherine.jpg",
+        "my_documents/nick.jpg",
+        "my_documents/sayan.png",
+    ];
+    var rotatables = ["Machine Structures"];
+    var rotatablesIndex = 0;
+    var rotatablesTimeout;
+    var MAX_RETRIES = 8;
+    var rotorContainer = document.getElementById("rotor-container");
+    var rotorRoot = document.getElementById("rotor-root");
+    var rotors = document.getElementsByClassName("rotors");
+    function preloadImage(url, retries, cb) {
+        retries = retries || 0
+        var img = new Image();
+        img.src = url;
+        img.onload = function() {
+            rotatables.push("<img src=\"" + url + "\" />");
+            if(cb) cb();
+        }
+        img.onerror = function(err) {
+            console.error("Loading " + url + " failed, retrying (" + retries + "/" + MAX_RETRIES + ")");
+            if(retries < MAX_RETRIES) {
+                preloadImage(url, retries + 1, cb);
+            } else {
+                if(cb) cb();
+            }
+        }
+    }
+    function preloadImages(index) {
+        index = index || 0;
+        if(index >= imgs.length) return;
+        var url = imgs[index];
+        preloadImage(url, 0, function() {
+            preloadImages(index + 1);
+        });
+    }
+    preloadImages(0);
+    function rotatablesTick(auto) {
+        clearTimeout(rotatablesTimeout);
+        var prevRot = rotatablesIndex;
+        while(prevRot === rotatablesIndex) {
+            // rotatablesIndex = ++rotatablesIndex % rotatables.length;
+            rotatablesIndex = Math.floor(Math.random() * rotatables.length);
+        }
+        for(var i = 0; i < rotors.length; i++) {
+            rotors[i].innerHTML = rotatables[rotatablesIndex];
+        }
+        if(auto) {
+            rotatablesTimeout = setTimeout(function() {
+                rotatablesTick(auto);
+            }, 1000);
+        }
+        return true;
+    }
+    rotorContainer.onclick = function(e) {
+        if(e.altKey) {
+            rotorRoot.innerHTML += rotorRoot.innerHTML;
+        }
+        return rotatablesTick(e.shiftKey);
+    }
+</script>
+</body>
+</html>
+

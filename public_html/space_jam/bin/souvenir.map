@@ -1,0 +1,9 @@
+default ../cmp/souvenirs/souvenirs.html
+rect ../cmp/souvenirs/screensaver.html 276,100 417,133
+rect ../cmp/souvenirs/clips.html 297,134 415,169
+rect ../cmp/souvenirs/postcards.html 334,171 417,207
+rect ../cmp/souvenirs/posters.html 284,227 408,262
+rect ../cmp/souvenirs/icons.html 256,261 387,295
+rect ../cmp/souvenirs/patterns.html 205,295 357,332
+rect ../cmp/souvenirs/loans.html 158,99 202,133
+rect ../cmp/souvenirs/haircut.html 37,87 74,175

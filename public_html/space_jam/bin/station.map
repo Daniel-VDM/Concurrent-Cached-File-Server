@@ -1,0 +1,4 @@
+default ../cmp/jump/jump.html
+rect ../cmp/jump/promotional.html 63,125 231,203
+rect ../cmp/jump/links.html 109,209 243,286
+rect ../cmp/jump/wblinks.html 322,126 439,230

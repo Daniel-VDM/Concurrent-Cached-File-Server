@@ -1,0 +1,5 @@
+default ../cmp/bball/bball.html
+rect ../cmp/bball/nba.html 179,68 424,160
+rect ../cmp/bball/qtvr.html 178,164 428,222
+rect ../cmp/bball/brollbball.html 222,224 428,301
+rect ../cmp/bball/playerbios.html 24,181 175,267

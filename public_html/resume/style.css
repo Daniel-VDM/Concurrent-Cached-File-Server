@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 0 #4db8ff;
+    }
+    20% {
+        box-shadow: 0 0 5px #4db8ff;
+    }
+    40% {
+        box-shadow: 0 0 2px #4db8ff;
+    }
+    80% {
+        box-shadow: 0 0 4px #4db8ff;
+    }
+    100% {
+        box-shadow: 0 0 0 #4db8ff;
+    }
+}
+
+::selection {
+    color: white;
+    background-color: #4db8ff;
+}
+
+::-moz-selection {
+    color: white;
+    background-color: #4db8ff;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+
+.offset:before {
+    display: block;
+    content: "";
+    height: 59px;
+    margin-top: -59px;
+}
+
+
+/*Overall Content Layout*/
+.narrow {
+    width: 66%;
+    margin: 1.5rem auto;
+    padding-top: 1rem;
+}
+
+.narrow p {
+    font-size: 1.15rem;
+}
+
+.narrow img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+/*Navbar Stuff*/
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .95rem;
+    letter-spacing: 0;
+    background: rgba(0, 0, 0, 0.7) !important
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    padding: 0 0 0 0;
+}
+
+.navbar-brand:hover {
+    color: #4db8ff !important;
+}
+
+.nav-link {
+    padding-top: 8px !important;
+}
+
+.navbar-nav li {
+    padding-right: .4rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #4db8ff;
+}
+
+
+/*Landing Page stuff*/
+.home-inner {
+    background-image: url(img/bg.jpeg);
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    bottom: 18%;
+    z-index: 1;
+    color: white;
+}
+
+.caption h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    margin-bottom: 0;
+    text-shadow: -.1rem .1rem .5rem rgba(0, 0, 0, 0.9);
+}
+
+.caption h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-shadow: -.1rem .1rem .3rem rgba(0, 0, 0, 0.9);
+    padding-bottom: .85rem;
+}
+
+.caption h4 {
+    padding-top: 18px;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.caption h4 a {
+    color: #dde0e6;
+}
+
+.caption h4 a:hover {
+    color: #4db8ff;
+}
+
+.btn-lg {
+    background-color: #4db8ff;
+    border-width: medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: .6rem 1.4rem;
+    font-size: 1.2rem;
+    box-shadow: 0 .1rem .7rem rgba(0, 0, 0, 0.8);
+}
+
+.btn-lg:hover {
+    background-color: white;
+}
+
+
+/*Section Heading stuff*/
+h3.heading {
+    font-size: 2.6em;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.heading-underline {
+    width: 17rem;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #4db8ff;
+    margin: 0 auto 1rem;
+    animation: glowing 7000ms infinite;
+}
+
+
+/*About Me stuff*/
+.heading-underline.about-line {
+    width: 15rem;
+}
+
+.about-bg {
+    /*It will bug if we use 0px*/
+    padding: .1px 0 44.8px;
+    background-color: #E9ECEF;
+}
+
+.about-bg a {
+    color: #4db8ff;
+}
+
+.card.about-pad {
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.6);
+    background-color: white;
+    border-radius: 0;
+    border-width: 0;
+    padding: 1rem 1rem 0;
+    border-color: transparent;
+}
+
+.card.about-pad p {
+    font-size: 1.13rem;
+}
+
+.card.about-wrapper {
+    background-color: #E9ECEF;
+    border-radius: 0;
+    border-width: 2px !important;
+    border-color: #4db8ff !important;
+    padding: 7px;
+}
+
+
+/*Education stuff*/
+.heading-underline.education-line {
+    width: 16.5rem;
+}
+
+.edu {
+    width: 1175px;
+    padding-bottom: 44.8px;
+}
+
+.edu b {
+    font-size: 2rem;
+}
+
+.edu a {
+    color: #4db8ff !important;
+    font-size: 1.3rem;
+}
+
+.edu i {
+    color: grey;
+    font-size: 1.2rem;
+}
+
+.edu p {
+    margin-bottom: 0;
+}
+
+.educ {
+    font-size: 1.1rem;
+    border-width: 0;
+}
+
+.educ h6 {
+    padding-left: 1rem;
+    padding-top: .25rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.educ h5 {
+    padding-bottom: 4px;
+    border-bottom: 1.5px dotted grey;
+}
+
+.educ small {
+    padding-left: 1rem;
+    color: grey;
+    text-transform: none;
+}
+
+.educol.col-md-6 {
+    padding: 4px 4px 4px 4px;
+}
+
+.card-body.edu-first {
+    padding-top: 0;
+}
+
+
+/*Experience stuff*/
+.fixed {
+    background-image: url(img/expBG.jpg);
+    z-index: -1;
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 40px 1rem 60.8px;
+}
+
+.row.dark {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.card-text small {
+    color: #4db8ff;
+    text-transform: uppercase;
+    font-size: .875rem;
+}
+
+.exp {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-width: 1px;
+    border-color: #4db8ff;
+    border-radius: 0;
+}
+
+.exp h5 {
+    font-size: 1.35rem;
+}
+
+.exp b {
+    font-size: 2.1rem;
+}
+
+.exp a {
+    color: #4db8ff;
+}
+
+.exp a:hover {
+    text-decoration: underline;
+}
+
+.card-body.exp-body {
+    padding-right: 0;
+}
+
+.col-md-2.col-xs-0.text-center.exp-pic {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.card.exp.narrow {
+    margin-top: 0;
+}
+
+.col-md-12.text-center.EarlyExp {
+    padding: 0;
+}
+
+.btn.EarlyExp {
+    color: white;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.btn.EarlyExp:hover {
+    color: #4db8ff;
+}
+
+.card.exp.EarlyExp {
+    width: 100%;
+}
+
+.exp-bottom.narrow {
+    padding: 0;
+    margin-top: 0;
+}
+
+#EarlyExp.narrow {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/*Portfolio Stuff*/
+.heading-underline.portfolio-line {
+    width: 16rem;
+}
+
+.portfolio-bg {
+    padding: 0.1px auto 59px;
+}
+
+.row.portfolio-bg{
+    padding-bottom: 59px;
+}
+
+.col-md-12.port-intro-pad {
+    padding: 0 1px 20px 1px !important;
+}
+
+.card.port-wrapper {
+    background-color: white;
+    padding: 7px;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: #4db8ff;
+}
+
+.card.port-intro {
+    padding: 16px;
+    background-image: radial-gradient(circle, #f8fdfd, #E9ECEF);
+    border-radius: 0;
+    border-width: 0;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card.port-intro p {
+    margin: 0;
+}
+
+.btn.port-intro {
+    background-color: #4db8ff;
+    border-radius: 0;
+    border-width: 1px;
+    border-color: #4db8ff;
+    color: white;
+    float: right;
+}
+
+.btn.port-intro:hover {
+    border-width: 1px;
+    border-color: #419bd7;
+    background-color: #43a9e6;
+}
+
+.btn.port-intro:focus,
+.btn.port-intro:active {
+    box-shadow: 0 0 0 0.2rem rgba(77, 184, 255, 0.75);
+}
+
+
+.btn.port-header-btn.text-left {
+    width: 100%;
+    line-height: 1.4rem;
+    padding: 0 0 0 0;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+
+.btn.port-header-btn:hover,
+.btn.port-header-btn.collapsed:hover {
+    color: #505962;
+}
+
+.btn.port-header-btn:after {
+    display: inline-block;
+    font: normal normal normal 20px/1 FontAwesome;
+    content: "\f077";
+    float: right;
+}
+
+.btn.port-header-btn.collapsed:after {
+    content: "\f078";
+}
+
+.card.card-port {
+    border-radius: 0;
+    border-width: 1px;
+    border-color: white;
+}
+
+.card-header.port {
+    background-color: #4db8ff;
+    border-radius: 0;
+    padding: 10px 16px;
+}
+
+.card-body.port {
+    color: white;
+    background-color: #505962;
+    font-size: 1.1rem;
+    padding: 16px;
+}
+
+.card-body.port a {
+    color: #4db8ff;
+}
+
+.badge.badge-info.port-badge1 {
+    border-radius: 4px;
+    font-size: .775rem;
+    background-color: #d1007d;
+}
+
+.badge.badge-info.port-badge {
+    border-radius: 4px;
+    font-size: .775rem;
+    background-color: #dd8902;
+}
+
+.card-body.port {
+    box-shadow: inset 0 1px 7px rgba(0, 0, 0, 0.75);
+}
+
+.col-12.port {
+    padding: 0;
+}
+
+.col-md-9.col-xs-12.port-foot {
+    padding: 0;
+}
+
+.col-md-3.col-xs-12.port-foot {
+    margin-top: auto;
+    padding: 0;
+}
+
+.btn.btn.port-body-btn {
+    -webkit-appearance: none !important;
+    float: right;
+    border-radius: 0;
+    border-width: 1px;
+    border-color: white;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    word-spacing: .15rem;
+}
+
+.btn.btn.port-body-btn:hover {
+    border-color: #28a745;
+    border-width: 1px;
+    color: #28a745;
+    background-color: white;
+}
+
+.btn.btn.port-body-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, .75);
+}
+
+
+/*Skills Stuff*/
+.heading-underline.skills-line {
+    width: 9.5rem;
+}
+
+.skills-bg {
+    padding: .1px auto;
+    background-color: #E9ECEF;
+}
+
+.skills-card {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
+
+.skills-body {
+    font-size: 1.25rem;
+    padding: 0 0 0 0;
+}
+
+.skills b {
+    font-size: 1.7rem;
+    color: #4db8ff;
+    line-height: 34px;
+}
+
+.skills-pad {
+    padding: 1.35rem;
+}
+
+.col-md-4.col-xs-0.skills-label {
+    padding-right: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: right;
+}
+
+.col-md-8.col-xs-12.skills-body {
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+
+/*Contact Info stuff*/
+.socket {
+    width: 100%;
+    height: 2px;
+    background-color: #505962;
+    margin-bottom: 5px;
+}
+
+footer {
+    font-size: .8rem;
+    background-color: #4db8ff;
+    color: white;
+    padding: 24px 0 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #505962;
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 1.2rem;
+    padding-top: .1rem;
+}
+
+.logos {
+    letter-spacing: 8px;
+}
+
+footer svg.svg-inline--fa {
+    font-size: 3rem;
+}
+
+footer svg.svg-inline--fa:hover {
+    color: #505962;
+}
+
+.col-md-5.text-center.footer {
+    padding-top: 0;
+    padding-bottom: 5px;
+}

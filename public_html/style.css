@@ -1,0 +1,184 @@
+html, body {
+	background-color: #2F4;
+	font: 24px 'Comic Sans MS', sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url("COMIC.TTF");
+}
+marquee.banner {
+	font: 72px serif;
+	background: black;
+	margin: 0;
+}
+.rainbow {
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	color:transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+.site-navigation {
+	background: #00F;
+}
+.site-navigation a {
+	display: inline-block;
+	margin: 1em 3em;
+	color: #EEE;
+	text-decoration: none;
+}
+.site-navigation a:hover {
+	color: #F24;
+}
+.site-icon {
+	display: inline-block;
+	font-size: 144px;
+	line-height: 144px;
+
+	cursor: pointer;
+
+	margin: 0;
+}
+.site-icon img {
+	height: 200px;
+	width: 200px;
+}
+.site-content {
+	padding: 2em;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.site-content.var-pink {
+	background: #F6B;
+	color: #BF6;
+}
+.site-content.var-orange {
+	background: #FA0;
+	color: #518;
+}
+@-webkit-keyframes flashing {
+	from {
+		color: #F06;
+	}
+	to {
+		color: #60F;
+	}
+}
+@keyframes flashing {
+	from {
+		color: #F06;
+	}
+	to {
+		color: #60F;
+	}
+}
+.flashing {
+	-webkit-animation: flashing 0.2s linear infinite alternate;
+	-moz-animation: flashing 0.2s linear infinite alternate;
+	-ms-animation: flashing 0.2s linear infinite alternate;
+	-o-animation: flashing 0.2s linear infinite alternate;
+	animation: flashing 0.2s linear infinite alternate;
+}
+@-webkit-keyframes rotating {
+	0% {
+		-ms-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-ms-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotating {
+	0% {
+		-ms-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-ms-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+.rotating {
+	-webkit-animation: rotating 2s linear infinite;
+	-moz-animation: rotating 2s linear infinite;
+	-ms-animation: rotating 2s linear infinite;
+	-o-animation: rotating 2s linear infinite;
+	animation: rotating 2s linear infinite;
+
+	display: inline-block;
+}
+@-webkit-keyframes pulsing {
+	0% {
+		-ms-transform: scale(0.5, 0.5);
+		-moz-transform: scale(0.5, 0.5);
+		-webkit-transform: scale(0.5, 0.5);
+		-o-transform: scale(0.5, 0.5);
+		transform: scale(0.5, 0.5);
+	}
+	50% {
+		-ms-transform: scale(1.5, 1.5);
+		-moz-transform: scale(1.5, 1.5);
+		-webkit-transform: scale(1.5, 1.5);
+		-o-transform: scale(1.5, 1.5);
+		transform: scale(1.5, 1.5);
+	}
+	100% {
+		-ms-transform: scale(0.5, 0.5);
+		-moz-transform: scale(0.5, 0.5);
+		-webkit-transform: scale(0.5, 0.5);
+		-o-transform: scale(0.5, 0.5);
+		transform: scale(0.5, 0.5);
+	}
+}
+@keyframes pulsing {
+	0% {
+		-ms-transform: scale(0.5, 0.5);
+		-moz-transform: scale(0.5, 0.5);
+		-webkit-transform: scale(0.5, 0.5);
+		-o-transform: scale(0.5, 0.5);
+		transform: scale(0.5, 0.5);
+	}
+	50% {
+		-ms-transform: scale(1.5, 1.5);
+		-moz-transform: scale(1.5, 1.5);
+		-webkit-transform: scale(1.5, 1.5);
+		-o-transform: scale(1.5, 1.5);
+		transform: scale(1.5, 1.5);
+	}
+	100% {
+		-ms-transform: scale(0.5, 0.5);
+		-moz-transform: scale(0.5, 0.5);
+		-webkit-transform: scale(0.5, 0.5);
+		-o-transform: scale(0.5, 0.5);
+		transform: scale(0.5, 0.5);
+	}
+}
+.pulsing {
+	-webkit-animation: pulsing 1.1s linear infinite;
+	-moz-animation: pulsing 1.1s linear infinite;
+	-ms-animation: pulsing 1.1s linear infinite;
+	-o-animation: pulsing 1.1s linear infinite;
+	animation: pulsing 1.1s linear infinite;
+}
