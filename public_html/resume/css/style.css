@@ -37,8 +37,8 @@ body {
 .offset:before {
     display: block;
     content: "";
-    height: 59px;
-    margin-top: -59px;
+    height: 50px;
+    margin-top: -50px;
 }
 
 
@@ -60,7 +60,20 @@ body {
 
 
 /*Navbar Stuff*/
+#LandingPageNav {
+    height: 50px;
+    font-size: 1.18rem;
+    background: #4db8ff !important;
+    box-shadow: 0 .1rem .6em rgba(0, 0, 0, 0.9);
+}
+
+.nav-link.LandingPageNav:hover {
+    color: black !important;
+}
+
 .navbar {
+    padding-top: 3px;
+    padding-bottom: 4px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: .95rem;
@@ -81,8 +94,13 @@ body {
     padding-top: 8px !important;
 }
 
-.navbar-nav li {
-    padding-right: .4rem;
+#LandingPageNav.navbar-nav li {
+    padding-right: .2rem;
+    padding-left: .2rem;
+}
+
+#homeBtn{
+    padding-left: 8px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -98,7 +116,7 @@ body {
 
 /*Landing Page stuff*/
 .home-inner {
-    background-image: url(img/bg.jpeg);
+    background-image: url(../img/bg.jpeg);
 }
 
 .caption {
@@ -134,7 +152,7 @@ body {
 }
 
 .caption h4 a {
-    color: #dde0e6;
+    color: #E9ECEF;
 }
 
 .caption h4 a:hover {
@@ -187,6 +205,10 @@ h3.heading {
 
 .about-bg a {
     color: #4db8ff;
+}
+
+.about-pad-in {
+    padding: .75rem !important;
 }
 
 .card.about-pad {
@@ -276,7 +298,7 @@ h3.heading {
 
 /*Experience stuff*/
 .fixed {
-    background-image: url(img/expBG.jpg);
+    background-image: url(../img/expBG.jpg);
     z-index: -1;
 }
 
@@ -378,7 +400,7 @@ h3.heading {
     padding: 0.1px auto 59px;
 }
 
-.row.portfolio-bg{
+.row.portfolio-bg {
     padding-bottom: 59px;
 }
 
@@ -396,7 +418,7 @@ h3.heading {
 
 .card.port-intro {
     padding: 16px;
-    background-image: radial-gradient(circle, #f8fdfd, #E9ECEF);
+    background: #E9ECEF;
     border-radius: 0;
     border-width: 0;
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
@@ -580,8 +602,8 @@ h3.heading {
 /*Contact Info stuff*/
 .socket {
     width: 100%;
-    height: 2px;
-    background-color: #505962;
+    height: 1px;
+    background-color: #4295d2;
     margin-bottom: 5px;
 }
 

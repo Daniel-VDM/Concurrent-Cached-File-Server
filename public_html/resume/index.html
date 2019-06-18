@@ -4,53 +4,83 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daniel Van Der Maden - Software Engineer</title>
+    <title>Daniel Van Der Maden</title>
     <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile-style.css">
     <link rel="stylesheet" href="css/fixed.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
-<div id="home">
-    <!-- Nav bar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#home"><i class="fas fa-home"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- Nav bar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#home" id="homeBtn"><i class="fas fa-home"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
-                                                                                          aria-hidden="true"> </i>
-                        Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
+                                                                                      aria-hidden="true"> </i>
+                    Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="LandingPageNav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive1">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive1">
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="home">
     <!-- Landing Page BG -->
     <div class="landing">
         <div class="home-wrap">
@@ -58,7 +88,7 @@
         </div>
     </div>
     <!-- Landing Page Content -->
-    <div class="caption text-center">
+    <div class="caption text-center" id="Sig">
         <img src="img/sig.png" class="img-fluid" alt="Responsive image">
         <h1><b>Daniel Van Der Maden</b></h1>
         <h3><i>Student | Software Engineer</i></h3>
@@ -66,8 +96,8 @@
                                                                                                   aria-hidden="true"> </i>
             My Resume</a>
         <h4>
-            <a href="mailto: dvandermaden0@berkeley.edu" target="_blank"><i class="fas fa-envelope-square"></i></a>
-            <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto: contact@danielvandermaden.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-vdm/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/Daniel-VDM" target="_blank"><i class="fab fa-github-square"></i></a>
         </h4>
     </div>
@@ -81,14 +111,13 @@
                 <h3 class="heading">About Me</h3>
                 <div class="heading-underline about-line"></div>
             </div>
-            <!-- Section Content -->
+            <!-- Section Content (no pic) -->
             <div class="row">
                 <div class="card about-wrapper fade">
                     <div class="card about-pad">
                         <p class="text-justify fade">Hi there! I am a senior at the University Of California, Berkeley
-                            pursuing a B.A. in Computer Science. I am currently finishing up my degree (3 classes
-                            remaining) this fall and I am looking to do an experience building internship at the same
-                            time.</p>
+                            pursuing a B.A. in Computer Science. I am currently finishing up my degree this fall, and I
+                            am looking to do a software engineering internship at the same time. </p>
 
                         <p class="text-justify fade">I have always enjoyed the process of building and showing my
                             creations. This is why software development/engineering appealed so much to me throughout my
@@ -102,25 +131,67 @@
                                     href="https://selfpaced.bitbucket.io" target="_blank">self-paced center</a>. I also
                             joined a student organization called <a href="https://csmberkeley.github.io"
                                                                     target="_blank"> Computer Science Mentors</a> where
-                            I mentored a group of 5 students through their lower division EECS courses. Furthermore, in
-                            my spare time, I am working on a <a href="https://github.com/Daniel-VDM/Seq2Seq-chatbot"
-                                                                target="_blank">chatbot</a> program that allows anyone
-                            to more easily learn how different parameters of a neural network model effects the fidelity
-                            of a chatbot.</p>
+                            I mentored a group of 5 students through their lower division EECS courses.</p>
 
-                        <p class="text-justify fade">
-                            Furthermore, I have had the opportunity to professionally work with a team of engineers
-                            during my 2018 summer internship at <a href="https://www.microsemi.com/company/about-us"
-                                                                   target="_blank">Microsemi</a>, where I helped develop
-                            a modernized eLoran (radio navigation and data) system. During my time there, I implemented
-                            the proprietary eLoran logic in a custom transmission timer unit and I created development
-                            tools for said unit. Overall, the internship taught me how to write robust code through
-                            their code review process. But more importantly, it also taught me how to effectively
-                            communicate with different teams to get a task done.</p>
+                        <p class="text-justify fade">I have also had the opportunity to professionally work with a team
+                            of engineers during my summer internship at <a
+                                    href="https://www.microsemi.com/company/about-us" target="_blank">Microsemi</a>,
+                            where I helped develop a modernized eLoran (radio navigation and data) system. </p>
+
+
+                        <p class="text-justify fade"> Currently, in my spare time, I am working on a <a
+                                href="https://github.com/Daniel-VDM/Seq2Seq-chatbot" target="_blank">chatbot</a> program
+                            that allows anyone to more easily learn how different parameters of a neural network model
+                            affects the fidelity of a chatbot.</p>
 
                     </div>
                 </div>
             </div>
+            <!-- Section Content (with pic) -->
+            <!--            <div class="row">-->
+            <!--                <div class="card about-wrapper fade">-->
+            <!--                    <div class="card about-pad">-->
+            <!--                        <div class="row">-->
+            <!--                            <div class="col-md-4 col-xs-12 about-pad-in text-center">-->
+            <!--                                <img class="about-img" src="img/ProfileCover.jpg">-->
+            <!--                            </div>-->
+            <!--                            <div class="col-md-8 col-xs-12 about-pad-in">-->
+            <!--                                <p class="text-justify fade">Hi there! I am a senior at the University Of California,-->
+            <!--                                    Berkeley pursuing a B.A. in Computer Science. I am currently finishing up my degree-->
+            <!--                                    (3 classes remaining) this fall, and I am looking to do an experience building-->
+            <!--                                    internship at the same time.</p>-->
+
+            <!--                                <p class="text-justify fade">I have always enjoyed the process of building and showing-->
+            <!--                                    my creations. This is why software development/engineering appealed so much to me-->
+            <!--                                    throughout my time in higher education — and has ultimately pushed me to learn a-->
+            <!--                                    vast skill set in the world of Computer Science. I have also gained a particular-->
+            <!--                                    academic interest in Natural Language Processing, Human-Computer Interaction, and-->
+            <!--                                    Artificial Intelligence throughout my time at UC Berkeley.</p>-->
+
+            <!--                                <p class="text-justify fade">I also enjoy helping and teaching other people. At UC-->
+            <!--                                    Berkeley, I tutored C, C++, Java, and Python in the EECS department's <a-->
+            <!--                                            href="https://selfpaced.bitbucket.io" target="_blank">self-paced center</a>.-->
+            <!--                                    I also joined a student organization called <a href="https://csmberkeley.github.io"-->
+            <!--                                                                                   target="_blank"> Computer Science-->
+            <!--                                        Mentors</a> where I mentored a group of 5 students through their lower division-->
+            <!--                                    EECS courses.</p>-->
+
+            <!--                                <p class="text-justify fade">I have also had the opportunity to professionally work with-->
+            <!--                                    a team of engineers during my summer internship at <a-->
+            <!--                                            href="https://www.microsemi.com/company/about-us"-->
+            <!--                                            target="_blank">Microsemi</a>, where I helped develop a modernized eLoran-->
+            <!--                                    (radio navigation and data) system. </p>-->
+
+            <!--                                <p class="text-justify fade"> Currently, in my spare time, I am working on a <a-->
+            <!--                                        href="https://github.com/Daniel-VDM/Seq2Seq-chatbot" target="_blank">chatbot</a>-->
+            <!--                                    program that allows anyone to more easily learn how different parameters of a neural-->
+            <!--                                    network model effects the fidelity of a chatbot.</p>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
         </div>
     </div>
 </div>
@@ -196,15 +267,14 @@
                                     and Timing Division</i></h5>
                                 <p class="card-text text-justify">I was part of a team that worked on a modernized
                                     eLoran (radio navigation and data) system which could function as a self-contained
-                                    backup of a GNSS (i.e: GPS). I was tasked with efficiently implementing a
-                                    proprietary eLoran signal scheme (in Python and C) which interfaced with a <a
+                                    backup of a GNSS (i.e: GPS). I was tasked with implementing multiple proprietary
+                                    eLoran signal schemes and creating an API to have them interface with a <a
                                             href="https://www.microsemi.com/company/about-us"
-                                            target="_blank">Microsemi</a> eLoran transmission timer unit. I was also
-                                    tasked with creating development tools that simulated said timing unit’s behavior
-                                    and outputted vital timing statistics. The development tools were mostly done in
-                                    Python using Scipy, with some use of C for the interfacing tasks. I ended my
-                                    internship by presenting my work to the rest of the eLoran team at their frequency
-                                    and timing division headquarters in Boulder, Colorado.</p>
+                                            target="_blank">Microsemi</a> eLoran transmission timer. I was also tasked
+                                    with creating development tools that simulate said timing unit’s behavior as well as
+                                    collect data and display vital timing statuses. I ended my internship by presenting
+                                    my work to the rest of the eLoran team at their frequency and timing division
+                                    headquarters in Boulder, Colorado.</p>
                                 <p class="card-text">
                                     <small>May 2018 — August 2018</small>
                                 </p>
@@ -272,13 +342,13 @@
                                 <p class="card-text text-justify">I was part of the <a
                                         href="https://csmberkeley.github.io" target="_blank">Computer Science
                                     Mentors</a> student organization at UC Berkeley. The organization’s goal is to
-                                    provide guidance and supplemental teaching sections for students taking computer
-                                    sciences courses. My focus was to help students taking <a
+                                    provide guidance and supplemental discussion sections for students taking lower
+                                    division computer sciences courses. My focus was to help students taking <a
                                             href="https://inst.eecs.berkeley.edu/~ee16a" target="_blank">Designing
-                                        Information Devices and Systems 1</a> by holding a one and a half hour teaching
-                                    section each week with a group of 5 students to review that week's course content. I
-                                    also provided extra support when it came to course selection and general support
-                                    throughout the year.</p>
+                                        Information Devices and Systems 1</a> by holding a supplemental 1.5
+                                    hour discussion section each week on the topics that were covered. I also helped run
+                                    midterm review sessions, and I helped develop supplemental course material. Lastly,
+                                    I mentored a cohort of five students throughout the semester.</p>
                                 <p class="card-text">
                                     <small>January 2019 — May 2019</small>
                                 </p>
@@ -315,10 +385,10 @@
                                         <br>J-Sei Community Center</h5>
                                     <p class="card-text text-justify">I was part of a <a
                                             href="https://decal.berkeley.edu/courses/4855" target="_blank">student
-                                        group</a> at UC Berkeley that volunteered their weekends to help teach/advise
+                                        group</a> at UC Berkeley that volunteered our weekends to help advise
                                         the elderly at <a href="https://j-sei.org/" target="_blank">J-Sei</a> on a
                                         variety of tech-related topics. I primarily focused on tech safety topics with a
-                                        heavy emphasis on privacy, recognizing scams, and avoiding identity theft.</p>
+                                        heavy emphasis on internet privacy, scam detection, and malware protection.</p>
                                     <p class="card-text">
                                         <small>September 2017 — November 2017</small>
                                     </p>
@@ -474,7 +544,7 @@
 
                             <div class="row">
                                 <div class="col-md-9 col-xs-12 port-foot">
-                                    The project files and an in-depth overview can be found on <a
+                                    An in-depth overview and project files can be found on <a
                                         href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
                                 </div>
                                 <div class="col-md-3 col-xs-12 port-foot text-center">
@@ -513,17 +583,18 @@
                                 data rates and signal reliability while minimizing hardware upgrades of existing Loran
                                 transmission stations. My contributions to the project were as follows: I learned and
                                 documented the limits of the project's Transmission Timer Unit (TTU). I implemented the
-                                new eLoran scheme in Python and interfaced it with the TTU in C. Lastly, I created
-                                development tools and data collection tools for the TTU using Python and C.
+                                new eLoran scheme in Python and created an API in C to interface it with the TTU.
+                                Lastly, I created development tools and data collection tools for the TTU using Python
+                                and C.
                             </p>
 
                             <p><b><i style="color: #68cdff">Key Features:</i></b> The project now has a "base" TTU logic
-                                script that has a flexible API and efficiently interfaces with its hardware. The
-                                proprietary scheme's TTU script now has easily modifiable parameters for on the fly
-                                scheme changes. The project now has a development tool that can simulate a perfect TTU's
-                                behavior given a TTU logic script. Lastly, the project now has a data collection tool
-                                that collects pulse timings, command timings, buffer sizes, and various statuses
-                                and saves it as a Pandas data frame for analysis.
+                                script that has a flexible API and efficiently interfaces with its hardware. All TTU
+                                scripts now have easily modifiable parameters for on the fly scheme changes. The project
+                                now has a development tool that can simulate a perfect TTU's behavior given a TTU logic
+                                script. Lastly, the project now has a data collection tool that collects pulse timings,
+                                command timings, buffer sizes, and various statuses and saves it as a Pandas data frame
+                                for analysis.
                             </p>
 
                             <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to effectively
@@ -553,7 +624,7 @@
                     <div class="card-header port" id="websiteHeading">
                         <button id="_website" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                                 data-target="#website" aria-expanded="true" aria-controls="website">
-                            My Resume Website<br>
+                            My Personal Website<br>
                             <span class="badge badge-info port-badge1">HTML5</span> <span
                                 class="badge badge-info port-badge1">CSS3</span> <span
                                 class="badge badge-info port-badge1">JavaScript</span> <span
@@ -564,8 +635,8 @@
                         <div class="card-body port text-justify">
                             <p>This was a personal/professional project that I did in my free time.</p>
 
-                            <p><b><i style="color: #68cdff">Description:</i></b> This is my own resume website that I
-                                created from scratch while learning HTML, CSS and some JavaScript. It uses Bootstrap
+                            <p><b><i style="color: #68cdff">Description:</i></b> This is my personal/resume website that
+                                I created from scratch while learning HTML, CSS and some JavaScript. It uses Bootstrap
                                 and jQuary to handle most of the styling and interactive components. But I also wrote a
                                 lot of additional CSS to customize the website to my taste.
                             </p>
@@ -590,57 +661,6 @@
                                 </div>
                                 <div class="col-md-3 col-xs-12 port-foot text-center">
                                     <a type="button" href="https://github.com/Daniel-VDM/Daniel-VDM.github.io"
-                                       target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
-                                        Project Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header port" id="fileServerHeading">
-                        <button id="_fileServer" class="btn port-header-btn text-left" type="button"
-                                data-toggle="collapse"
-                                data-target="#fileServer" aria-expanded="true" aria-controls="fileServer">
-                            Concurrent Cached File Server<br>
-                            <span class="badge badge-info port-badge1">Golang</span>
-                        </button>
-                    </div>
-                    <div id="fileServer" class="collapse portfolioBody show" aria-labelledby="fileServerHeading">
-                        <div class="card-body port text-justify">
-                            <p>
-                                This was the final project done for the Machine Structures <a href="https://cs61c.org/"
-                                                                                              target="_blank">course</a>
-                                taken at UC Berkeley.
-                            </p>
-
-                            <p><b><i style="color: #68cdff">Description:</i></b> This is a file server that features a
-                                cache which can efficiently handle thousands of concurrent file requests.
-                            </p>
-
-                            <p><b><i style="color: #68cdff">Key Features:</i></b> It has a cache that is fully
-                                associative (with random replacement) and has a variable size (which is defined on
-                                start-up). It sanitizes the request's file path to mitigate a directory traversal
-                                attack. It has an API to handle cache clear requests and cache status requests. It has a
-                                toggleable debugging mode that logs file requests, file returns and cache contents.
-                                The project also has a large test suite to ensure that the concurrent executions are
-                                correct. Lastly, it has a testing framework that deliberately slows down hard-disk file
-                                reads to visualize the cache's effectiveness.
-                            </p>
-
-                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to program in Golang.
-                                I learned how to write and debug a concurrently executed program. I learned how to
-                                handle HTTP requests in Golang. I learned how to mitigate a directory traversal attack.
-                                I learned how to thoroughly test my program using Golang's testing framework.
-                            </p>
-
-                            <div class="row">
-                                <div class="col-md-9 col-xs-12 port-foot">
-                                    The project files and an in-depth overview can be found on <a
-                                        href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
-                                </div>
-                                <div class="col-md-3 col-xs-12 port-foot text-center">
-                                    <a type="button" href="https://github.com/Daniel-VDM/Concurrent-Cached-File-Server"
                                        target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
                                         Project Repo</a>
                                 </div>
@@ -691,11 +711,62 @@
 
                             <div class="row">
                                 <div class="col-md-9 col-xs-12 port-foot">
-                                    The project files and an in-depth overview can be found on <a
+                                    An in-depth overview and project files can be found on <a
                                         href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
                                 </div>
                                 <div class="col-md-3 col-xs-12 port-foot text-center">
                                     <a type="button" href="https://github.com/Daniel-VDM/CS170_Project"
+                                       target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
+                                        Project Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header port" id="fileServerHeading">
+                        <button id="_fileServer" class="btn port-header-btn text-left" type="button"
+                                data-toggle="collapse"
+                                data-target="#fileServer" aria-expanded="true" aria-controls="fileServer">
+                            Concurrent Cached File Server<br>
+                            <span class="badge badge-info port-badge1">Golang</span>
+                        </button>
+                    </div>
+                    <div id="fileServer" class="collapse portfolioBody show" aria-labelledby="fileServerHeading">
+                        <div class="card-body port text-justify">
+                            <p>
+                                This was the final project done for the Machine Structures <a href="https://cs61c.org/"
+                                                                                              target="_blank">course</a>
+                                taken at UC Berkeley.
+                            </p>
+
+                            <p><b><i style="color: #68cdff">Description:</i></b> This is a file server that features a
+                                cache which can efficiently handle thousands of concurrent file requests.
+                            </p>
+
+                            <p><b><i style="color: #68cdff">Key Features:</i></b> It has a cache that is fully
+                                associative (with random replacement) and has a variable size (which is defined on
+                                start-up). It sanitizes the request's file path to mitigate a directory traversal
+                                attack. It has an API to handle cache clear requests and cache status requests. It has a
+                                toggleable debugging mode that logs file requests, file returns and cache contents.
+                                The project also has a large test suite to ensure that the concurrent executions are
+                                correct. Lastly, it has a testing framework that deliberately slows down hard-disk file
+                                reads to visualize the cache's effectiveness.
+                            </p>
+
+                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to program in Golang.
+                                I learned how to write and debug a concurrently executed program. I learned how to
+                                handle HTTP requests in Golang. I learned how to mitigate a directory traversal attack.
+                                I learned how to thoroughly test my program using Golang's testing framework.
+                            </p>
+
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    An in-depth overview and project files can be found on <a
+                                        href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center">
+                                    <a type="button" href="https://github.com/Daniel-VDM/Concurrent-Cached-File-Server"
                                        target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
                                         Project Repo</a>
                                 </div>
@@ -737,16 +808,15 @@
                                     about the model's features and data filtering.</i>
                             </p>
 
-                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to process large
-                                data sets using Pandas. I learned how to work with NLTK to filer training data. I
-                                learned
-                                how to work with Scikit-learn's Logistic Regression model. Lastly, I learned how to
+                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to process large data
+                                sets using Pandas. I learned how to work with NLTK to filer training data. I learned how
+                                to work with Scikit-learn's Logistic Regression model. Lastly, I learned how to
                                 efficiently encode data for the model using Numpy/Scipy.
                             <p>
 
                             <div class="row">
                                 <div class="col-md-9 col-xs-12 port-foot">
-                                    The project files and an in-depth overview can be found on <a
+                                    An in-depth overview and project files can be found on <a
                                         href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
                                 </div>
                                 <div class="col-md-3 col-xs-12 port-foot text-center">
@@ -959,7 +1029,8 @@
                     </div>
                     <div class="col-md-8 col-xs-12 skills-body">
                         <div class="card-body skills-body">
-                            Scipy/Numpy/Pandas &nbsp; NLTK &nbsp; Keras &nbsp; Scikit-learn &nbsp; NetworkX &nbsp; Spark<br>
+                            Scipy/Numpy/Pandas &nbsp; NLTK &nbsp; Keras &nbsp; Scikit-learn &nbsp; NetworkX &nbsp;
+                            Hadoop<br>
                             JUnit &nbsp; OpenMP &nbsp; Intel AVX &nbsp; CUnit &nbsp; AWS EC2 &nbsp; MySQL &nbsp;
                             Bootstrap
                         </div>
@@ -1007,11 +1078,12 @@
                 <h3><b>Contact Info</b></h3>
                 <p>
                     &#9742 +1 (714) 251-4974 <br>
-                    &#9993 <a href="mailto: dvandermaden0@berkeley.edu" target="_blank">dvandermaden0@berkeley.edu</a>
+                    &#9993 <a href="mailto: contact@danielvandermaden.com"
+                              target="_blank">contact@danielvandermaden.com</a>
                 </p>
                 <div class="logos">
                     <a href="https://github.com/Daniel-VDM" target="_blank"><i class="fab fa-github-square"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-vdm/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://www.facebook.com/daniel.vandermaden" target="_blank"><i
                             class="fab fa-facebook-square"></i></a>
                 </div>
@@ -1030,72 +1102,5 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-<script>
-    window.onload = function () {
-        sleep(400) // Midpage reload fade fix
-        portfolioToggle(); // Portfolio icon fix
-    };
-
-    // Simple sleep function.
-    function sleep(ms) {
-        var start = new Date().getTime();
-        for (var i = 0; i < 1e7; i++) {
-            if ((new Date().getTime() - start) > ms) {
-                break;
-            }
-        }
-    }
-
-    var isPortfolioToggled = true; // Global for portfolioToggle()
-
-    // Global toggler for the interactive list in the portfolio section.
-    function portfolioToggle() {
-        var btnObjs = document.getElementsByClassName("btn port-header-btn text-left")
-        for (var i = 0; i < btnObjs.length; i++) {
-            var classStr = document.getElementById(btnObjs[i].id.toString().slice(1,)).className.toString()
-            if (isPortfolioToggled
-                && (classStr == "collapse portfolioBody show" || classStr == "portfolioBody collapse show")) {
-                btnObjs[i].click();
-            } else if (!isPortfolioToggled
-                && (classStr == "collapse portfolioBody" || classStr == "portfolioBody collapse")) {
-                btnObjs[i].click();
-            }
-        }
-        isPortfolioToggled = !isPortfolioToggled;
-    }
-
-    // Add fading when elements come in/out of view.
-    $(window).on("load", function () {
-        $(window).scroll(function () {
-            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fade").each(function () {
-                if ($(this).offset().top < windowBottom) { //object comes into view (scrolling down)
-                    if ($(this).css("opacity") == 0) {
-                        $(this).fadeTo(300, 1);
-                    }
-                } else { //object goes out of view (scrolling up)
-                    if ($(this).css("opacity") == 1) {
-                        $(this).fadeTo(0, 0);
-                    }
-                }
-            });
-        }).scroll();
-    });
-
-    // Add smooth scrolling to all links
-    $(document).ready(function () {
-        $("a").on('click', function (event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 400, function () {
-                    window.location.hash = hash;
-                });
-            }
-        });
-    });
-</script>
+<script src="js/scripts.js"></script>
 </html>
