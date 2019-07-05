@@ -13,6 +13,16 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
+<script>
+    let ua = navigator.userAgent;
+    if (ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1 || ua.indexOf("Edge/") > -1) {
+        alert('This browser is NOT SUPPORTED. ' +
+            '\nPlease use Chrome, Safari or Firefox. ' +
+            '\n\nFor reference, my resume is at: ' +
+            '\nhttps://www.danielvandermaden.com/resume.pdf');
+    }
+</script>
+
 <body data-spy="scroll" data-target="#navbarResponsive">
 <!-- Nav bar -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -25,8 +35,8 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
-                                                                                      aria-hidden="true"> </i>
+                <a class="nav-link" href="resume.pdf" target="_blank"><i class="fa fa-file-pdf"
+                                                                         aria-hidden="true"> </i>
                     Resume</a>
             </li>
             <li class="nav-item">
@@ -88,18 +98,23 @@
         </div>
     </div>
     <!-- Landing Page Content -->
-    <div class="caption text-center" id="Sig">
+    <div class="caption landingContent text-center" id="Sig">
         <img src="img/sig.png" class="img-fluid" alt="Responsive image">
         <h1><b>Daniel Van Der Maden</b></h1>
         <h3><i>Student | Software Engineer</i></h3>
-        <a class="btn btn-outline-light btn-lg" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
-                                                                                                  aria-hidden="true"> </i>
+        <a class="btn btn-outline-light btn-lg" href="resume.pdf" target="_blank"><i class="fa fa-file-pdf"
+                                                                                     aria-hidden="true"> </i>
             My Resume</a>
         <h4>
             <a href="mailto: contact@danielvandermaden.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
             <a href="https://www.linkedin.com/in/daniel-vdm/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/Daniel-VDM" target="_blank"><i class="fab fa-github-square"></i></a>
         </h4>
+        <div class="landingBottom text-center">
+            <h3>
+                <i class="fas fa-chevron-down"></i>
+            </h3>
+        </div>
     </div>
 </div>
 
@@ -116,8 +131,7 @@
                 <div class="card about-wrapper fade">
                     <div class="card about-pad">
                         <p class="text-justify fade">Hi there! I am a senior at the University Of California, Berkeley
-                            pursuing a B.A. in Computer Science. I am currently finishing up my degree this fall, and I
-                            am looking to do a software engineering internship at the same time. </p>
+                            pursuing a B.A. in Computer Science and I am currently finishing up my degree this fall.</p>
 
                         <p class="text-justify fade">I have always enjoyed the process of building and showing my
                             creations. This is why software development/engineering appealed so much to me throughout my
@@ -133,8 +147,8 @@
                                                                     target="_blank"> Computer Science Mentors</a> where
                             I mentored a group of 5 students through their lower division EECS courses.</p>
 
-                        <p class="text-justify fade">I have also had the opportunity to professionally work with a team
-                            of engineers during my summer internship at <a
+                        <p class="text-justify fade">I have also had the opportunity to professionally work with a
+                            diverse team of engineers during my summer software engineering internship at <a
                                     href="https://www.microsemi.com/company/about-us" target="_blank">Microsemi</a>,
                             where I helped develop a modernized eLoran (radio navigation and data) system. </p>
 
@@ -238,7 +252,7 @@
             <div class="row no-gutters">
                 <div class="card-body fade">
                     <h5 class="card-title text-center"><b>Irvine Valley College</b>
-                        <br><a>Transferred</a> - <i>GPA: 3.92/4.00</i> - Transferred August 2017</h5>
+                        <br><a>Transferred</a> - <i>GPA: 3.92/4.00</i> - Transferred May 2017</h5>
                 </div>
             </div>
         </div>
@@ -621,54 +635,6 @@
                     </div>
                 </div>
                 <div class="card card-port">
-                    <div class="card-header port" id="websiteHeading">
-                        <button id="_website" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                                data-target="#website" aria-expanded="true" aria-controls="website">
-                            My Personal Website<br>
-                            <span class="badge badge-info port-badge1">HTML5</span> <span
-                                class="badge badge-info port-badge1">CSS3</span> <span
-                                class="badge badge-info port-badge1">JavaScript</span> <span
-                                class="badge badge-info port-badge">Bootstrap 4</span>
-                        </button>
-                    </div>
-                    <div id="website" class="collapse portfolioBody show" aria-labelledby="websiteHeading">
-                        <div class="card-body port text-justify">
-                            <p>This was a personal/professional project that I did in my free time.</p>
-
-                            <p><b><i style="color: #68cdff">Description:</i></b> This is my personal/resume website that
-                                I created from scratch while learning HTML, CSS and some JavaScript. It uses Bootstrap
-                                and jQuary to handle most of the styling and interactive components. But I also wrote a
-                                lot of additional CSS to customize the website to my taste.
-                            </p>
-
-                            <p><b><i style="color: #68cdff">Key Features:</i></b> It is ultra-wide and mobile friendly.
-                                It has some custom JavaScript code for custom button and scroll functionalities. It uses
-                                Font Awesome to keep all the icons up-to-date. It presents information in a clean,
-                                non-cluttered fashion. It has a landing page that has all the essential information for
-                                a recruiter. It has an easy way of adding (or taking out) content in each major section.
-                            </p>
-
-                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to create and style
-                                websites using HTML5 and CSS3. I learned how to use the Bootstrap 4 framework. I learned
-                                how to add custom functionality to websites using JavaScript. Lastly, I learned how to
-                                debug websites using Google Chrome's web page inspect tool.
-                            </p>
-
-                            <div class="row">
-                                <div class="col-md-9 col-xs-12 port-foot">
-                                    The project files can be found on <a
-                                        href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
-                                </div>
-                                <div class="col-md-3 col-xs-12 port-foot text-center">
-                                    <a type="button" href="https://github.com/Daniel-VDM/Daniel-VDM.github.io"
-                                       target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
-                                        Project Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-port">
                     <div class="card-header port" id="npApproxHeading">
                         <button id="_npApprox" class="btn port-header-btn text-left" type="button"
                                 data-toggle="collapse"
@@ -829,6 +795,54 @@
                     </div>
                 </div>
                 <div class="card card-port">
+                    <div class="card-header port" id="websiteHeading">
+                        <button id="_website" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                                data-target="#website" aria-expanded="true" aria-controls="website">
+                            My Personal Website<br>
+                            <span class="badge badge-info port-badge1">HTML5</span> <span
+                                class="badge badge-info port-badge1">CSS3</span> <span
+                                class="badge badge-info port-badge1">JavaScript</span> <span
+                                class="badge badge-info port-badge">Bootstrap 4</span>
+                        </button>
+                    </div>
+                    <div id="website" class="collapse portfolioBody show" aria-labelledby="websiteHeading">
+                        <div class="card-body port text-justify">
+                            <p>This was a personal/professional project that I did in my free time.</p>
+
+                            <p><b><i style="color: #68cdff">Description:</i></b> This is my personal/resume website that
+                                I created from scratch while learning HTML, CSS and some JavaScript. It uses Bootstrap
+                                and jQuary to handle most of the styling and interactive components. But I also wrote a
+                                lot of additional CSS to customize the website to my taste.
+                            </p>
+
+                            <p><b><i style="color: #68cdff">Key Features:</i></b> It is ultra-wide and mobile friendly.
+                                It has some custom JavaScript code for custom button and scroll functionalities. It uses
+                                Font Awesome to keep all the icons up-to-date. It presents information in a clean,
+                                non-cluttered fashion. It has a landing page that has all the essential information for
+                                a recruiter. It has an easy way of adding (or taking out) content in each major section.
+                            </p>
+
+                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to create and style
+                                websites using HTML5 and CSS3. I learned how to use the Bootstrap 4 framework. I learned
+                                how to add custom functionality to websites using JavaScript. Lastly, I learned how to
+                                debug websites using Google Chrome's web page inspect tool.
+                            </p>
+
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    The project files can be found on <a
+                                        href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center">
+                                    <a type="button" href="https://github.com/Daniel-VDM/Daniel-VDM.github.io"
+                                       target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
+                                        Project Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-port">
                     <div class="card-header port" id="cnnHeading">
                         <button id="_cnn" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                                 data-target="#cnn" aria-expanded="false" aria-controls="cnn">
@@ -921,7 +935,7 @@
                                 has a large CUnit test suit that ensures that the lexer, parser, and code generator
                                 function correctly. It does not have a memory leak that grows proportional to the input
                                 size. Lastly, it generates RISC-V code that adheres to the caller/callee saved
-                                conventions for general compatibility.
+                                conventions for universal compatibility.
                             </p>
 
                             <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to manage memory in
@@ -1090,7 +1104,7 @@
             </div>
             <div class="socket"></div>
             <div class="col-md-5 text-center footer">
-                Website built by Daniel Van Der Maden with Bootstrap 4<br>
+                Website built by Daniel Van Der Maden<br>
                 Images from <a href="http://www.freepik.com">Onlyyouqj</a> and <a target="_blank"
                                                                                   href='https://jooinn.com/coding.html?ref=22842'>Negativespace</a><br>
             </div>
