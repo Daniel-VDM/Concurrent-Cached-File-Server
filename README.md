@@ -7,7 +7,7 @@ This was the final project done for the Machine Structures course taken at UC Be
 
 2) Install the userlib for this file server by running: `go get github.com/Daniel-VDM/Concurrent-Cached-File-Server-Userlib`
 
-3) Clone the project to the following directory: `$GOPATH/src/github.com/Daniel-VDM. Note that this can be done with the following command: `go get github.com/Daniel-VDM/Concurrent-Cached-File-Server`
+3) Clone the project to the following directory: `$GOPATH/src/github.com/Daniel-VDM`. Note that this can be done with the following command: `go get github.com/Daniel-VDM/Concurrent-Cached-File-Server`
 > Beware of the `$gopath`, it is important in Golang that the defined file structure is used.
 
 4) Run the server by running: `go run server.go`
